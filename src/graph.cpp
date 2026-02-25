@@ -1,6 +1,6 @@
 #include "graph.h"
 
-int Graph::add_node(std::string op_type, std::string name)
+int Graph::add_node(const std::string& op_type,const  std::string& name)
 {
     int id = nodes.size();
     nodes.push_back(Node{});
@@ -11,7 +11,7 @@ int Graph::add_node(std::string op_type, std::string name)
 }
 
 
-int Graph::get_create_value(std::string name)
+int Graph::get_create_value(const std::string& name)
 {
     auto it = value_by_name.find(name);
     if (it != value_by_name.end()) return it->second;

@@ -40,6 +40,6 @@ AttrValue parse_attr(const onnx::AttributeProto& a) {
         }
 
         default:
-            throw std::runtime_error("unsupported ONNX atrtribute type");
+            throw std::runtime_error("unsupported onnx atrtribute type");
     }
 }

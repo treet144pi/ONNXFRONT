@@ -37,7 +37,7 @@ struct Graph
         std::unordered_map<std::string, int> value_by_name;
 
     public: // functions
-        int add_node(std::string op_type, std::string name = "");
-        int get_create_value(std::string name);
+        int add_node(const std::string& op_type,const std::string& name = "");
+        int get_create_value(const std::string& name);
 
 };
